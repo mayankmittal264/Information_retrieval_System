@@ -2,7 +2,7 @@
 Problem Statement -
 You are given a data set of public review for product along with review text and score, you have
 to build an IR (Information Retrieval) system. When a user can come and search their keywords
-and based on that the review text with the highest review score should appear.
+and based on that the review text with the highest review score and helpfulness should appear.
 Sample row:
 product/productId: B001E4KFG0
 review/userId: A3SGXH7AUHU8GW
