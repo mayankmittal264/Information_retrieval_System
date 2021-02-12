@@ -1,0 +1,32 @@
+{% load static %}
+<Html>
+<head>
+	<meta charset="utf-8">
+	<title>PRODUCT REVIEW SEARCH</title>
+	<meta name="description" content="Product Review Search">
+	<meta name="author" content="Mayank Mittal">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background: url({% static 'img/food.jpg' %}) no-repeat center;background-size: cover;">
+		<h1>Search Product Review</h1>
+		<div class=wrap">
+			<fieldset>
+			<form class="search" id="inform" name="inform" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				{{form.media}}
+				{{form.as_p}}
+				<input type="text" class="product" name="data">
+				<button type="submit" class="submit"><i class="fa fa-search"></i></button>
+			</form>
+			</fieldset>
+		</div>
+		<fieldset>
+		<form id="outform" name="outform" method="GET" enctype="multipart/form-data">
+			{% csrf_token %}
+			{{form.media}}
+			{{form.as_p}}
+			<p class="review">{{review_text}}</p>
+		</form>
+		</fieldset>
+</body>
