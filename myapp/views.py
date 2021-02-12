@@ -7,7 +7,7 @@ from django.http import HttpResponse
 def webpage(request, *args):
     result = []
     if request.method == "POST":
-	result = []
+        result = []
         data = request.POST.get('data', '')
         for objects in Product.objects.all():
             if data.lower() in Product.get_text(objects).lower():
