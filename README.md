@@ -26,10 +26,12 @@ Solution-
 
 1. Please place foods.txt after untar foods.txt.gz and place it at myapp\management\Files location to load the django model
 2. Please go to IRSystem\ location and follow below steps sequentially
-3. Run the below commands to migrate the model-
+3. Run below command
+    pip install requirement.txt
+4. Run the below commands to migrate the model-
     python manage.py makemigrations
     python manage.py migrate
-4. To perform the feature 1 Management command to load and index the complete dataset to database model please run the below command :-
+5. To perform the feature 1 Management command to load and index the complete dataset to database model please run the below command :-
     python manage.py management
-5. Please run the below command and navigate to http://127.0.0.1:8000/ URL in the browser to launch the application :-
+6. Please run the below command and navigate to http://127.0.0.1:8000/ URL in the browser to launch the application :-
     python manage.py runserver
