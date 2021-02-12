@@ -24,7 +24,8 @@ submission.
 
 Solution-
 
-1. Please place foods.txt after untar foods.txt.gz and place it at myapp\management\Files location to load the django model
+1. Please open "PRODUCT REVIEW SEARCH - Assignment.pdf" and download source file from given link.
+   Please place foods.txt after untar foods.txt.gz and place it at myapp\management\Files location to load the django model
 2. Please go to IRSystem\ location and follow below steps sequentially
 3. Run below command
     pip install requirement.txt
